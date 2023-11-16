@@ -1,8 +1,8 @@
-export default function Home() {
+export default function Admin() {
   return (
     <main className="">
       <div>
-        <h1>home</h1>
+        <h1>admin</h1>
       </div>
     </main>
   );
