@@ -11,6 +11,7 @@ export default function Admin() {
   return (
     <div className="vertical-content">
       <div className="add-user">
+        <h1>Add User</h1>
         <button
           onClick={(e) => {
             e.preventDefault();
