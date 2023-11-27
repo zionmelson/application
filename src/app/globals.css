@@ -43,19 +43,85 @@
   min-height: 100vh;
 }
 
-.main {
+main {
   width: 100%;
-  padding-top: 15rem;
+  padding-top: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
 }
 
+.vertical-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.horizontal-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.add-user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  border: 2px solid #5f5f5f;
+  background: linear-gradient(205deg, #040404, #3a3a3a);
+  border-radius: 5rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.developer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  border-radius: 1.5rem;
+  background: linear-gradient(205deg, #040404, #3a3a3a);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  transition: all 0.2s linear;
+}
+
+#light .developer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  border-radius: 1.5rem;
+  background: linear-gradient(205deg, #9f9f9f, #cfcfcf);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  transition: all 0.2s linear;
+}
+
+.edit {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.5rem;
+  align-items: center;
+  gap: 1rem;
+  justify-content: flex-end;
+  width: 100%;
+  transition: all 0.2s linear;
+}
+
 .h1 {
   font-size: 3rem;
   font-family: Inter, sans-serif;
-  width: 80%;
 }
 
 .h1-sub {
@@ -66,12 +132,10 @@
 .h2 {
   font-family: Inter, sans-serif;
   font-size: 1.2rem;
-  width: 75%;
 }
 
 .h3 {
   font-size: 1rem;
-  width: 55%;
 }
 
 .h4 {
@@ -111,6 +175,18 @@
   justify-content: center;
   background-color: #c6c6c6;
   padding: 0.5rem;
+}
+
+#edit:hover {
+  color: #5555ff;
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+
+#trash:hover {
+  color: #ff5555;
+  transition: all 0.2s linear;
+  cursor: pointer;
 }
 
 @media (max-width: 767px) {

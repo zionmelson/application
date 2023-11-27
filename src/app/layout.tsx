@@ -2,7 +2,7 @@
 import "./globals.css";
 import { useState, createContext, useEffect } from "react";
 
-export const ThemeContext = createContext(null);
+export const ThemeContext: any = createContext(null);
 
 export default function RootLayout({
   children,
@@ -34,7 +34,7 @@ export default function RootLayout({
               )}
             </button>
           </div>
-          <div className="main">{children}</div>
+          <main>{children}</main>
         </body>
       </html>
     </ThemeContext.Provider>
